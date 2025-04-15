@@ -183,6 +183,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5728797984108786630, guid: 40ebde13482cf41c1bddf29d77a06471,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -257,6 +263,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2D (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168438256921493633, guid: f3f1b998ef1ca4bee8b13e3024c62cee,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -748,6 +760,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4857775507748259226, guid: 7ab3a4f3d38ad4e2e84cabbb4aec3530,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     - target: {fileID: 7641535347853804417, guid: 7ab3a4f3d38ad4e2e84cabbb4aec3530,
         type: 3}
       propertyPath: m_Name
@@ -973,6 +991,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2D
       objectReference: {fileID: 0}
+    - target: {fileID: 6168438256921493633, guid: f3f1b998ef1ca4bee8b13e3024c62cee,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1177,6 +1201,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2D (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168438256921493633, guid: f3f1b998ef1ca4bee8b13e3024c62cee,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1329,7 +1359,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8421facf6ac894d4a90e330f44d91ef0, type: 3}
+  m_Script: {fileID: 11500000, guid: bc5f0f09d47151f4e90ff2ebfb0f0943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &555509798
@@ -2003,6 +2033,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dirt_2D (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5666923472638593309, guid: 57a8a3a7dcc4149d1a10f3dc04258aca,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2083,6 +2119,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2D (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168438256921493633, guid: f3f1b998ef1ca4bee8b13e3024c62cee,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2298,6 +2340,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5728797984108786630, guid: 40ebde13482cf41c1bddf29d77a06471,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2372,6 +2420,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5728797984108786630, guid: 40ebde13482cf41c1bddf29d77a06471,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2609,6 +2663,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4857775507748259226, guid: 7ab3a4f3d38ad4e2e84cabbb4aec3530,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     - target: {fileID: 7641535347853804417, guid: 7ab3a4f3d38ad4e2e84cabbb4aec3530,
         type: 3}
       propertyPath: m_Name
@@ -2651,8 +2711,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7179393266b4d039813b2dec39dd1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  canMoveDiagonally: 1
+  Speed: 5
+  CanMoveDiagonally: 1
 --- !u!50 &1609426626
 Rigidbody2D:
   serializedVersion: 5
@@ -3117,6 +3177,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dirt_2D
       objectReference: {fileID: 0}
+    - target: {fileID: 5666923472638593309, guid: 57a8a3a7dcc4149d1a10f3dc04258aca,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3180,6 +3246,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4857775507748259226, guid: 7ab3a4f3d38ad4e2e84cabbb4aec3530,
+        type: 3}
+      propertyPath: OnCollectEffect
+      value: 
+      objectReference: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9,
+        type: 3}
     - target: {fileID: 7641535347853804417, guid: 7ab3a4f3d38ad4e2e84cabbb4aec3530,
         type: 3}
       propertyPath: m_Name
