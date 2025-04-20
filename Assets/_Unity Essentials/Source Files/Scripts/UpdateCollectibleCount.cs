@@ -10,7 +10,7 @@ public class UpdateCollectibleCount : MonoBehaviour
 
     private int totalCollectibles = 0;
 
-    void Start()
+    private void Start()
     {
         collectibleText = GetComponent<TextMeshProUGUI>();
         if (collectibleText == null)
@@ -35,7 +35,7 @@ public class UpdateCollectibleCount : MonoBehaviour
         UpdateCollectibleDisplay(); // Initial update on start
     }
 
-    void Update()
+    private void Update()
     {
         if (--unityObjectSearchingLimit < 1)
         {
@@ -44,7 +44,7 @@ public class UpdateCollectibleCount : MonoBehaviour
         }
     }
 
-    public void UpdateCollectibleDisplay()
+    private void UpdateCollectibleDisplay()
     {
         int leftCollectibles = 0;
 

@@ -1,6 +1,8 @@
+using System;
 using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(TextMeshProUGUI))]
 public class PushablesCountUpdate : MonoBehaviour
 {
     private TextMeshProUGUI _collectibleText;
@@ -10,31 +12,23 @@ public class PushablesCountUpdate : MonoBehaviour
 
     private void Start()
     {
-        _collectibleText = GetComponent<TextMeshProUGUI>();
-        if (_collectibleText == null)
-        {
-            Debug.LogError("UpdateCollectibleCount script requires a TextMeshProUGUI component on the same GameObject.");
-            return;
-        }
+        throw new Exception("Not yert implemented");
 
-        _totalPushables = GameObject.FindGameObjectsWithTag("Pushable").Length;
-        _leftPushables = _totalPushables;
-    }
+        //_collectibleText = GetComponent<TextMeshProUGUI>();
 
-    private void Update()
-    {
-        
+        //_totalPushables = GameObject.FindGameObjectsWithTag("Pushable").Length;
+        //_leftPushables = _totalPushables;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Pushable"))
-            _leftPushables -= 1;
+        //if (other.GetComponent<Pushable>() == null)
+        //    _leftPushables -= 1;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Pushable"))
-            _leftPushables += 1;
+        //if (other.GetComponent<Pushable>() == null)
+        //    _leftPushables += 1;
     }
 }
