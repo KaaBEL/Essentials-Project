@@ -5,70 +5,80 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 {
     [SerializeField]
-    private float RotationPerFrame = 0.5f;
+    private float _rotationPerFrame = 0.5f;
     [SerializeField]
-    private float RotationTiltPerFrame = 0.007f;
+    private float _rotationTiltPerFrame = 0.007f;
     [SerializeField]
-    private float LevitationHeight = 0f;
-
-    [SerializeField]
-    private GameObject CollectedEffect;
+    private float _levitationHeight = 0f;
 
     [SerializeField]
-    private bool Invincible = false;
+    private GameObject _collectedEffect;
 
-    private float RotationTilt = 0f;
+    [SerializeField]
+    private bool _invincible = false;
 
-    private Vector3 InitialPosition = Vector3.right;
+    private float _rotationTilt = 0f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Vector3 _initialPosition;
+
+    private Player _player;
+
     private void Start()
     {
-        InitialPosition = gameObject.transform.position;
+        _player = FindAnyObjectByType<Player>();
+        if (_player == null)
+        {
+            throw new Exception("Player instance not found.");
+        }
+        _initialPosition = gameObject.transform.position;
     }
 
-    // Update is called once per frame
     private void Update()
     {
-        var x = Convert.ToSingle(Math.Sin(RotationTilt));
-        var y = Convert.ToSingle(Math.Cos(RotationTilt));
-        var z = 0;
+        float x = Convert.ToSingle(Math.Sin(_rotationTilt));
+        float y = Convert.ToSingle(Math.Cos(_rotationTilt));
+        float z = 0;
 
-        if (LevitationHeight == 0)
+        if (_levitationHeight == 0)
         {
-            transform.Rotate(new(x, y, z), RotationPerFrame);
+            transform.Rotate(new(x, y, z), _rotationPerFrame);
         }
         else
         {
-            transform.SetPositionAndRotation(new(InitialPosition.x, InitialPosition.y +
-                y * LevitationHeight, InitialPosition.z), transform.rotation);
-            transform.Rotate(0f, RotationPerFrame, 0f);
+            transform.SetPositionAndRotation(new(_initialPosition.x, _initialPosition.y +
+                y * _levitationHeight, _initialPosition.z), transform.rotation);
+            transform.Rotate(0f, _rotationPerFrame, 0f);
         }
 
-        RotationTilt += RotationTiltPerFrame;
+        _rotationTilt += _rotationTiltPerFrame;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Player"))
-            return;
+        if (!other.Equals(_player)) return;
 
-        Instantiate(CollectedEffect, transform.position, transform.rotation);
+        Instantiate(_collectedEffect, transform.position, transform.rotation);
 
-        if (!Invincible)
+        if (!_invincible)
+        {
             Destroy(gameObject);
+        }
         else
         {
             var results = new List<BoxCollider>();
             GetComponents<BoxCollider>(results);
             foreach (var box in results)
+            {
                 if (box.isTrigger || box.enabled)
+                {
                     Destroy(box);
+                }
                 else
                 {
                     box.enabled = true;
                 }
-            LevitationHeight = 0;
+            }
+            _levitationHeight = 0;
         }
     }
 }

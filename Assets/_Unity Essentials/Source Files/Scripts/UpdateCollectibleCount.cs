@@ -4,16 +4,16 @@ using System; // Required for Type handling
 
 public class UpdateCollectibleCount : MonoBehaviour
 {
-    private TextMeshProUGUI CollectibleText; // Reference to the TextMeshProUGUI component
+    private TextMeshProUGUI collectibleText; // Reference to the TextMeshProUGUI component
 
-    private int UnityObjectSearchingLimit = 1;
+    private int unityObjectSearchingLimit = 1;
 
-    private int TotalCollectibles = 0;
+    private int totalCollectibles = 0;
 
     void Start()
     {
-        CollectibleText = GetComponent<TextMeshProUGUI>();
-        if (CollectibleText == null)
+        collectibleText = GetComponent<TextMeshProUGUI>();
+        if (collectibleText == null)
         {
             Debug.LogError("UpdateCollectibleCount script requires a TextMeshProUGUI component on the same GameObject.");
             return;
@@ -23,23 +23,23 @@ public class UpdateCollectibleCount : MonoBehaviour
         Type collectibleType = Type.GetType("Collectible");
         if (collectibleType != null)
         {
-            TotalCollectibles += UnityEngine.Object.FindObjectsByType(collectibleType, FindObjectsSortMode.None).Length;
+            totalCollectibles += UnityEngine.Object.FindObjectsByType(collectibleType, FindObjectsSortMode.None).Length;
         }
 
         // Optionally, check and count objects of type Collectible2D as well if needed
         Type collectible2DType = Type.GetType("Collectible2D");
         if (collectible2DType != null)
         {
-            TotalCollectibles += UnityEngine.Object.FindObjectsByType(collectible2DType, FindObjectsSortMode.None).Length;
+            totalCollectibles += UnityEngine.Object.FindObjectsByType(collectible2DType, FindObjectsSortMode.None).Length;
         }
         UpdateCollectibleDisplay(); // Initial update on start
     }
 
     void Update()
     {
-        if (--UnityObjectSearchingLimit < 1)
+        if (--unityObjectSearchingLimit < 1)
         {
-            UnityObjectSearchingLimit = 4;
+            unityObjectSearchingLimit = 4;
             UpdateCollectibleDisplay();
         }
     }
@@ -63,6 +63,6 @@ public class UpdateCollectibleCount : MonoBehaviour
         }
 
         // Update the collectible count display
-        CollectibleText.text = $"{leftCollectibles} / {TotalCollectibles}";
+        collectibleText.text = $"{leftCollectibles} / {totalCollectibles}";
     }
 }

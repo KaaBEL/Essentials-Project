@@ -1,13 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider))]
 public class OneWayPassage : MonoBehaviour
 {
-    private BoxCollider HiddenDoor;
+    private BoxCollider _hiddenDoor;
 
-    // Start is called once before the first execution of Update
-    // after the MonoBehaviou is created
-    void Start()
+    private void Start()
     {
         var results = new List<BoxCollider>();
         GetComponents<BoxCollider>(results);
@@ -15,21 +14,21 @@ public class OneWayPassage : MonoBehaviour
         {
             if (!box.isTrigger)
             {
-                HiddenDoor = box;
+                _hiddenDoor = box;
                 return;
             }
         }
         Debug.LogError("BoxCollider for one way passage was not found");
-        HiddenDoor = gameObject.AddComponent<BoxCollider>();
+        _hiddenDoor = gameObject.AddComponent<BoxCollider>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        HiddenDoor.enabled = false;
+        _hiddenDoor.enabled = false;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        HiddenDoor.enabled = true;
+        _hiddenDoor.enabled = true;
     }
 }

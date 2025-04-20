@@ -430,12 +430,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.5
-  RotationTiltPerFrame: 0.007
-  LevitationHeight: 0
-  CollectedEffect: {fileID: 9163842254569548763, guid: 0e62c4d669c52425fa7ad6a0a297dd84,
+  _rotationPerFrame: 0.5
+  _rotationTiltPerFrame: 0.007
+  _levitationHeight: 0
+  _collectedEffect: {fileID: 9163842254569548763, guid: 0e62c4d669c52425fa7ad6a0a297dd84,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!65 &57926074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -534,12 +534,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0
-  RotationTiltPerFrame: 0.007
-  LevitationHeight: 0
-  CollectedEffect: {fileID: 9163842254569548763, guid: a64312fe794124baa923bcca22ea4631,
+  _rotationPerFrame: 0
+  _rotationTiltPerFrame: 0.007
+  _levitationHeight: 0
+  _collectedEffect: {fileID: 9163842254569548763, guid: a64312fe794124baa923bcca22ea4631,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!65 &61498597
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1111,12 +1111,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1 &150275086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,12 +1667,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1001 &259648830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2233,12 +2233,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1001 &323623084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2873,12 +2873,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!4 &416566049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1472110355077429745, guid: d753f23fefc4f0f4eaa35d24bd80e7e2,
@@ -3207,12 +3207,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.5
-  RotationTiltPerFrame: 0.007
-  LevitationHeight: 0
-  CollectedEffect: {fileID: 9163842254569548763, guid: 0e62c4d669c52425fa7ad6a0a297dd84,
+  _rotationPerFrame: 0.5
+  _rotationTiltPerFrame: 0.007
+  _levitationHeight: 0
+  _collectedEffect: {fileID: 9163842254569548763, guid: 0e62c4d669c52425fa7ad6a0a297dd84,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!65 &478117231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3395,12 +3395,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.5
-  RotationTiltPerFrame: 0.007
-  LevitationHeight: 0
-  CollectedEffect: {fileID: 9163842254569548763, guid: 0e62c4d669c52425fa7ad6a0a297dd84,
+  _rotationPerFrame: 0.5
+  _rotationTiltPerFrame: 0.007
+  _levitationHeight: 0
+  _collectedEffect: {fileID: 9163842254569548763, guid: 0e62c4d669c52425fa7ad6a0a297dd84,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!65 &491722239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4951,12 +4951,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0
-  RotationTiltPerFrame: 0.007
-  LevitationHeight: 0
-  CollectedEffect: {fileID: 9163842254569548763, guid: a64312fe794124baa923bcca22ea4631,
+  _rotationPerFrame: 0
+  _rotationTiltPerFrame: 0.007
+  _levitationHeight: 0
+  _collectedEffect: {fileID: 9163842254569548763, guid: a64312fe794124baa923bcca22ea4631,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!4 &962750225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2702072609741181135, guid: dddc3ae9a1ed446b6bf9d7ee0a2433a2,
@@ -5035,12 +5035,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.007
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.007
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1 &972051810 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8061833878208187336, guid: 74ab8f72987454f0db40e7903d894991,
@@ -5867,12 +5867,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1001 &1044968009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6300,12 +6300,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1 &1151565737
 GameObject:
   m_ObjectHideFlags: 0
@@ -6977,12 +6977,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0
-  RotationTiltPerFrame: 0.007
-  LevitationHeight: 0
-  CollectedEffect: {fileID: 9163842254569548763, guid: a64312fe794124baa923bcca22ea4631,
+  _rotationPerFrame: 0
+  _rotationTiltPerFrame: 0.007
+  _levitationHeight: 0
+  _collectedEffect: {fileID: 9163842254569548763, guid: a64312fe794124baa923bcca22ea4631,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!65 &1396586398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7049,6 +7049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825430031008280828, guid: 04edd7db8eccc4a7abbb77ea1eda35a4,
+        type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5070355599431184999, guid: 04edd7db8eccc4a7abbb77ea1eda35a4,
         type: 3}
@@ -7695,12 +7700,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.007
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.007
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1001 &1535494012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7897,12 +7902,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!4 &1597614284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5935808096725669181, guid: 04edd7db8eccc4a7abbb77ea1eda35a4,
@@ -8108,12 +8113,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.1
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 1
-  CollectedEffect: {fileID: 9163842254569548763, guid: a64312fe794124baa923bcca22ea4631,
+  _rotationPerFrame: 0.1
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 1
+  _collectedEffect: {fileID: 9163842254569548763, guid: a64312fe794124baa923bcca22ea4631,
     type: 3}
-  Invincible: 1
+  _invincible: 1
 --- !u!65 &1647928628
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8640,12 +8645,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1 &1783572213
 GameObject:
   m_ObjectHideFlags: 0
@@ -9595,12 +9600,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1001 &1998914354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10612,12 +10617,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0
-  RotationTiltPerFrame: 0.007
-  LevitationHeight: 0
-  CollectedEffect: {fileID: 9163842254569548763, guid: a64312fe794124baa923bcca22ea4631,
+  _rotationPerFrame: 0
+  _rotationTiltPerFrame: 0.007
+  _levitationHeight: 0
+  _collectedEffect: {fileID: 9163842254569548763, guid: a64312fe794124baa923bcca22ea4631,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!65 &2003386851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10684,12 +10689,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1001 &2012930631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10953,12 +10958,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fcc41a8e7cc5b4bb67a6a63e5837f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationPerFrame: 0.3
-  RotationTiltPerFrame: 0.005
-  LevitationHeight: 0.1
-  CollectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
+  _rotationPerFrame: 0.3
+  _rotationTiltPerFrame: 0.005
+  _levitationHeight: 0.1
+  _collectedEffect: {fileID: 9163842254569548763, guid: 919783951ffab4c9ea8860c54de9543c,
     type: 3}
-  Invincible: 0
+  _invincible: 0
 --- !u!1001 &2092128025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11943,7 +11948,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3025057826002565749, guid: 9f6e1034442ed9a44996868b934a1582,
         type: 3}
+      propertyPath: _jumpForce
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025057826002565749, guid: 9f6e1034442ed9a44996868b934a1582,
+        type: 3}
       propertyPath: RotationSpeed
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025057826002565749, guid: 9f6e1034442ed9a44996868b934a1582,
+        type: 3}
+      propertyPath: _rotationSpeed
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 3257303591091043826, guid: 9f6e1034442ed9a44996868b934a1582,

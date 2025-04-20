@@ -1,80 +1,67 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController2D : MonoBehaviour
 {
-    // Public variables
     [SerializeField]
-    private float Speed = 5f; // The speed at which the player moves
+    private float _speed = 5f;
     [SerializeField]
-    private bool CanMoveDiagonally = true; // Controls whether the player can move diagonally
+    private bool _canMoveDiagonally = true;
 
-    // Private variables 
-    private Rigidbody2D Rb; // Reference to the Rigidbody2D component attached to the player
-    private Vector2 Movement; // Stores the direction of player movement
-    private bool IsMovingHorizontally = true; // Flag to track if the player is moving horizontally
+    private Rigidbody2D _rigidbody;
+    private Vector2 _movement;
+    private bool _isMovingHorizontally = true;
 
-    void Start()
+    private void Start()
     {
-        // Initialize the Rigidbody2D component
-        Rb = GetComponent<Rigidbody2D>();
-        // Prevent the player from rotating
-        Rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
-    void Update()
+    private void Update()
     {
-        // Get player input from keyboard or controller
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
 
-        // Check if diagonal movement is allowed
-        if (CanMoveDiagonally)
+        if (_canMoveDiagonally)
         {
-            // Set movement direction based on input
-            Movement = new Vector2(horizontalInput, verticalInput);
-            // Optionally rotate the player based on movement direction
+            _movement = new Vector2(horizontalInput, verticalInput);
             RotatePlayer(horizontalInput, verticalInput);
         }
         else
         {
-            // Determine the priority of movement based on input
             if (horizontalInput != 0)
             {
-                IsMovingHorizontally = true;
+                _isMovingHorizontally = true;
             }
             else if (verticalInput != 0)
             {
-                IsMovingHorizontally = false;
+                _isMovingHorizontally = false;
             }
 
-            // Set movement direction and optionally rotate the player
-            if (IsMovingHorizontally)
+            if (_isMovingHorizontally)
             {
-                Movement = new Vector2(horizontalInput, 0);
+                _movement = new Vector2(horizontalInput, 0);
                 RotatePlayer(horizontalInput, 0);
             }
             else
             {
-                Movement = new Vector2(0, verticalInput);
+                _movement = new Vector2(0, verticalInput);
                 RotatePlayer(0, verticalInput);
             }
         }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        // Apply movement to the player in FixedUpdate for physics consistency
-        Rb.linearVelocity = Movement * Speed;
+        _rigidbody.linearVelocity = _movement * _speed;
     }
 
-    void RotatePlayer(float x, float y)
+    private void RotatePlayer(float x, float y)
     {
-        // If there is no input, do not rotate the player
         if (x == 0 && y == 0) return;
 
-        // Calculate the rotation angle based on input direction
         float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
-        // Apply the rotation to the player
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 }
