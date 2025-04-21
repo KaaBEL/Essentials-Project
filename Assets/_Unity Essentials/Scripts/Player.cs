@@ -47,8 +47,11 @@ public class Player : MonoBehaviour
 
         if (transform.position.y < -64f)
         {
+            float x = transform.position.x / 10;
+            float z = transform.position.z / 10;
+
             _rgidbody.linearVelocity = new(0, 0, 0);
-            _rgidbody.MovePosition(new(-0.809f, 516f, -4.252f));
+            _rgidbody.MovePosition(new(x, 516f, z));
         }
     }
 }
