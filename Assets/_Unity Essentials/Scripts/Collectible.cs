@@ -21,15 +21,8 @@ public class Collectible : MonoBehaviour
 
     private Vector3 _initialPosition;
 
-    private Player _player;
-
     private void Start()
     {
-        _player = FindAnyObjectByType<Player>();
-        if (_player == null)
-        {
-            throw new Exception("Player instance not found.");
-        }
         _initialPosition = gameObject.transform.position;
     }
 
@@ -55,7 +48,7 @@ public class Collectible : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.Equals(_player)) return;
+        if (other.GetComponent<Player>() == null) return;
 
         Instantiate(_collectedEffect, transform.position, transform.rotation);
 

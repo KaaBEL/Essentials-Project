@@ -5,14 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class PushablesCountUpdate : MonoBehaviour
 {
-    private TextMeshProUGUI _collectibleText;
+    //private TextMeshProUGUI _collectibleText;
 
-    private int _totalPushables = 0;
-    private int _leftPushables = 0;
+    //private int _totalPushables = 0;
+    //private int _leftPushables = 0;
 
     private void Start()
     {
-        throw new Exception("Not yert implemented");
+        throw new Exception("To be implemented");
 
         //_collectibleText = GetComponent<TextMeshProUGUI>();
 
@@ -20,15 +20,15 @@ public class PushablesCountUpdate : MonoBehaviour
         //_leftPushables = _totalPushables;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        //if (other.GetComponent<Pushable>() == null)
-        //    _leftPushables -= 1;
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.GetComponent<Pushable>() == null)
+    //        _leftPushables -= 1;
+    //}
 
-    private void OnTriggerExit(Collider other)
-    {
-        //if (other.GetComponent<Pushable>() == null)
-        //    _leftPushables += 1;
-    }
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (other.GetComponent<Pushable>() == null)
+    //        _leftPushables += 1;
+    //}
 }
