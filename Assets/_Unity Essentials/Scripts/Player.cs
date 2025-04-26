@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float _rotationSpeed = 120.0f;
 
-    private Rigidbody _rgidbody;
+    private Rigidbody _rigidbody;
 
     [SerializeField]
     private float _jumpForce = 0.5f;
@@ -18,14 +18,14 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        _rgidbody = GetComponent<Rigidbody>();
+        _rigidbody = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
         if (Input.GetButton("Jump") && _jumpDelay <= 0)
         {
-            _rgidbody.AddForce(Vector3.up * _jumpForce, ForceMode.VelocityChange);
+            _rigidbody.AddForce(Vector3.up * _jumpForce, ForceMode.VelocityChange);
             _jumpDelay = 1f;
         }
     }
@@ -35,23 +35,25 @@ public class Player : MonoBehaviour
     {
         float moveVertical = Input.GetAxis("Vertical");
         Vector3 movement = moveVertical * _speed * Time.fixedDeltaTime * transform.forward;
-        _rgidbody.MovePosition(_rgidbody.position + movement);
+        _rigidbody.MovePosition(_rigidbody.position + movement);
 
         float turn = Input.GetAxis("Horizontal") * _rotationSpeed * Time.fixedDeltaTime;
         float pitch = Input.GetAxis("Pitch") * _rotationSpeed * Time.fixedDeltaTime;
         Quaternion turnRotation = Quaternion.Euler(pitch, turn, 0f);
-        _rgidbody.MoveRotation(_rgidbody.rotation * turnRotation);
+        _rigidbody.MoveRotation(_rigidbody.rotation * turnRotation);
 
         if (_jumpDelay > 0)
             _jumpDelay -= Time.fixedDeltaTime;
 
         if (transform.position.y < -64f)
         {
-            float x = transform.position.x / 10;
-            float z = transform.position.z / 10;
+            _rigidbody.linearVelocity = new(0, 0, 0);
 
-            _rgidbody.linearVelocity = new(0, 0, 0);
-            _rgidbody.MovePosition(new(x, 516f, z));
+            float closerX = transform.position.x / 10;
+            float closerZ = transform.position.z / 10;
+            float fallbackY = 516f;
+
+            _rigidbody.MovePosition(new(closerX, fallbackY, closerZ));
         }
     }
 }

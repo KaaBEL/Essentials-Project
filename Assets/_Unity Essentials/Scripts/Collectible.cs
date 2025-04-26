@@ -48,7 +48,7 @@ public class Collectible : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Player>() == null) return;
+        if (!other.TryGetComponent(out Player unused)) return;
 
         Instantiate(_collectedEffect, transform.position, transform.rotation);
 

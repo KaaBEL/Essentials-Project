@@ -12,10 +12,10 @@ public class Collectible2D : MonoBehaviour
         transform.Rotate(0, 0, _rotationSpeed);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        
-        if (other.GetComponent<PlayerController2D>() != null) {
-            
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out PlayerController2D unused))
+        {
             Destroy(gameObject);
 
             Instantiate(_onCollectEffect, transform.position, transform.rotation);

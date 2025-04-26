@@ -12,14 +12,10 @@ public class OneWayPassage : MonoBehaviour
         GetComponents<BoxCollider>(results);
         foreach (var box in results)
         {
-            if (!box.isTrigger)
-            {
-                _hiddenDoor = box;
-                return;
-            }
+            _hiddenDoor = box;
+            if (!box.isTrigger) return;
         }
         Debug.LogError("BoxCollider for one way passage was not found");
-        _hiddenDoor = gameObject.AddComponent<BoxCollider>();
     }
 
     private void OnTriggerEnter(Collider other)

@@ -18,7 +18,7 @@ public class PlayerController2D : MonoBehaviour
         _rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
@@ -50,10 +50,7 @@ public class PlayerController2D : MonoBehaviour
                 RotatePlayer(0, verticalInput);
             }
         }
-    }
 
-    private void FixedUpdate()
-    {
         _rigidbody.linearVelocity = _movement * _speed;
     }
 
