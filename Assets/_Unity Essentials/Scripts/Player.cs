@@ -49,11 +49,13 @@ public class Player : MonoBehaviour
         {
             _rigidbody.linearVelocity = new(0, 0, 0);
 
-            float closerX = transform.position.x / 10;
-            float closerZ = transform.position.z / 10;
-            float fallbackY = 516f;
+            const float HorizontalAdjustment = 10;
 
-            _rigidbody.MovePosition(new(closerX, fallbackY, closerZ));
+            float closerX = transform.position.x / HorizontalAdjustment;
+            float closerZ = transform.position.z / HorizontalAdjustment;
+            const float FallbackY = 516f;
+
+            _rigidbody.MovePosition(new(closerX, FallbackY, closerZ));
         }
     }
 }
