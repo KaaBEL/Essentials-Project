@@ -1,6 +1,7 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
+using static System.Convert;
+using static System.Math;
 
 public class Collectible : MonoBehaviour
 {
@@ -11,8 +12,9 @@ public class Collectible : MonoBehaviour
     [SerializeField]
     private float _levitationHeight = 0f;
 
+    // different Collectibles use different effects
     [SerializeField]
-    private GameObject _collectedEffect;
+    private Object _collectedEffect;
 
     [SerializeField]
     private bool _invincible = false;
@@ -28,8 +30,8 @@ public class Collectible : MonoBehaviour
 
     private void Update()
     {
-        float x = Convert.ToSingle(Math.Sin(_rotationTilt));
-        float y = Convert.ToSingle(Math.Cos(_rotationTilt));
+        float x = ToSingle(Sin(_rotationTilt));
+        float y = ToSingle(Cos(_rotationTilt));
         float z = 0;
 
         if (_levitationHeight == 0)
