@@ -57,7 +57,7 @@ ExportedObj/
 sysinfo.txt
 
 # Builds
-*.apk
+/[Bb]uild/.apk#*.apk
 *.aab
 *.unitypackage
 *.unitypackage.meta
@@ -72,3 +72,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+
+# CUSTOM .GITIGNORE
+/Assets/
+/ProjectSettings/
+.vsconfig
+.gitattributes
